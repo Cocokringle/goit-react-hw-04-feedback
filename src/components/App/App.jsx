@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import s from './App.module.css'
 import Section from '../Section/Section';
 import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
@@ -6,10 +6,10 @@ import Statistics from '../Statistics/Statistics';
 import Notification from '../Notification/Notification';
 
 
-export default function App(){
-    const [good, setGood] = useState(0)
-    const [neutral, setNeutral] = useState(0)
-    const [bad, setBad ]= useState(0)
+export default function App() {
+    const [good, setGood] = useState(0);
+    const [neutral, setNeutral] = useState(0);
+    const [bad, setBad ]= useState(0);
 
     const onLeaveFeedback = (event) => {
         switch(event.target.name){
